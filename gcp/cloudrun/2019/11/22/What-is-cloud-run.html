@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="What is CloudRun" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Cloud run is what i expected Appengine to be - a container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA." />
-<meta property="og:description" content="Cloud run is what i expected Appengine to be - a container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA." />
+<meta name="description" content="Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA." />
+<meta property="og:description" content="Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA." />
 <link rel="canonical" href="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" />
 <meta property="og:url" content="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" />
 <meta property="og:site_name" content="StackExplorer" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-22T00:00:00-08:00" />
 <script type="application/ld+json">
-{"description":"Cloud run is what i expected Appengine to be - a container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.","@type":"BlogPosting","url":"http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html","headline":"What is CloudRun","datePublished":"2019-11-22T00:00:00-08:00","dateModified":"2019-11-22T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html"},"@context":"https://schema.org"}</script>
+{"description":"Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.","@type":"BlogPosting","url":"http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html","headline":"What is CloudRun","datePublished":"2019-11-22T00:00:00-08:00","dateModified":"2019-11-22T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="StackExplorer" /></head>
 <body><header class="site-header" role="banner">
@@ -45,13 +45,13 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Cloud run is what i expected Appengine to be - a container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</p>
+    <p>Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</p>
 
 <ul>
-  <li>Scale to zero instances when there is no traffic.</li>
+  <li>Scale to zero container instances when there is no traffic.</li>
   <li>Built on Knative and its portable across platforms and minimize lock-in</li>
-  <li>Pay-per use model - pay only for compute used. But you cannot limit the price of cloud run from console - if your app becomes popular overnight you will get a surprise bill.</li>
-  <li>If you have existing GKE cluster then you can add CloudRun add-on to use CloudRun in the existing GKE cluster.</li>
+  <li>Pay-per use model - pay only for compute used. But you cannot limit the price of cloud run from console - if your app becomes popular overnight you will get a surprise bill unless you configure something like Cost and limits.</li>
+  <li>If you have existing GKE cluster then you can add add-on to use CloudRun in the existing GKE cluster.</li>
 </ul>
 
 <h1 id="cloudrun-example">CloudRun example</h1>

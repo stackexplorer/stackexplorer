@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T11:30:19-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">Bundler error</title><link href="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html" rel="alternate" type="text/html" title="Bundler error" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/error/notes/2019/11/22/Bundler-error</id><content type="html" xml:base="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html">&lt;p&gt;Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T12:42:18-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
+
+&lt;p&gt;If you have python3 installed then it can be done using a single command:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This by default runs on port 8000. Optionally you can configure the port by running the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server 9000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Its a blocking command and you get the access logs for each access from browser to know whats happening:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [23/Nov/2019 12:30:20] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:20] code 404, message File not found
+127.0.0.1 - - [23/Nov/2019 12:30:20] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -
+127.0.0.1 - - [23/Nov/2019 12:30:26] &quot;GET /cloudrun/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:27] &quot;GET /cloudrun/2019/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:29] &quot;GET /cloudrun/2019/11/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:30] &quot;GET /cloudrun/2019/11/22/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:30] &quot;GET /cloudrun/2019/11/22/What-is-cloud-run.html HTTP/1.1&quot; 200 -
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reference:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/http.server.html&quot;&gt;https://docs.python.org/3/library/http.server.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="[&quot;howto&quot;, &quot;webserver&quot;]" /><category term="howto" /><category term="webserver" /><category term="local" /><summary type="html">You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.</summary></entry><entry><title type="html">Bundler error</title><link href="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html" rel="alternate" type="text/html" title="Bundler error" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/error/notes/2019/11/22/Bundler-error</id><content type="html" xml:base="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html">&lt;p&gt;Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
@@ -17,13 +42,13 @@
 &lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/rbenv/rbenv/issues/1138&quot;&gt;Issue details&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="error" /><category term="notes" /><summary type="html">Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.</summary></entry><entry><title type="html">What is CloudRun</title><link href="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" rel="alternate" type="text/html" title="What is CloudRun" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run</id><content type="html" xml:base="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html">&lt;p&gt;Cloud run is what i expected Appengine to be - a container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="error" /><category term="notes" /><summary type="html">Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.</summary></entry><entry><title type="html">What is CloudRun</title><link href="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" rel="alternate" type="text/html" title="What is CloudRun" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run</id><content type="html" xml:base="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html">&lt;p&gt;Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Scale to zero instances when there is no traffic.&lt;/li&gt;
+  &lt;li&gt;Scale to zero container instances when there is no traffic.&lt;/li&gt;
   &lt;li&gt;Built on Knative and its portable across platforms and minimize lock-in&lt;/li&gt;
-  &lt;li&gt;Pay-per use model - pay only for compute used. But you cannot limit the price of cloud run from console - if your app becomes popular overnight you will get a surprise bill.&lt;/li&gt;
-  &lt;li&gt;If you have existing GKE cluster then you can add CloudRun add-on to use CloudRun in the existing GKE cluster.&lt;/li&gt;
+  &lt;li&gt;Pay-per use model - pay only for compute used. But you cannot limit the price of cloud run from console - if your app becomes popular overnight you will get a surprise bill unless you configure something like Cost and limits.&lt;/li&gt;
+  &lt;li&gt;If you have existing GKE cluster then you can add add-on to use CloudRun in the existing GKE cluster.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;cloudrun-example&quot;&gt;CloudRun example&lt;/h1&gt;
@@ -53,7 +78,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h1 id=&quot;cost-and-limits&quot;&gt;Cost and limits&lt;/h1&gt;
 &lt;p&gt;https://stackoverflow.com/questions/27616776/how-do-i-set-a-cost-limit-in-google-developers-console
-https://cloud.google.com/apis/docs/capping-api-usage&lt;/p&gt;</content><author><name></name></author><category term="gcp" /><category term="cloudrun" /><category term="container" /><category term="managed" /><summary type="html">Cloud run is what i expected Appengine to be - a container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</summary></entry><entry><title type="html">Essential algorithms for interviews</title><link href="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
+https://cloud.google.com/apis/docs/capping-api-usage&lt;/p&gt;</content><author><name></name></author><category term="gcp" /><category term="cloudrun" /><category term="container" /><category term="managed" /><summary type="html">Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</summary></entry><entry><title type="html">Essential algorithms for interviews</title><link href="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
 
 &lt;h3 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h3&gt;
 &lt;ul&gt;
