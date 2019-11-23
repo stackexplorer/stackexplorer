@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://stackexplorer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://stackexplorer.github.io/" rel="alternate" type="text/html" /><updated>2019-10-13T22:54:54-07:00</updated><id>https://stackexplorer.github.io/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">Essential algorithms for interviews</title><link href="https://stackexplorer.github.io/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>https://stackexplorer.github.io/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="https://stackexplorer.github.io/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-22T18:28:02-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">Bundler error</title><link href="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html" rel="alternate" type="text/html" title="Bundler error" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/error/notes/2019/11/22/Bundler-error</id><content type="html" xml:base="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html">&lt;p&gt;Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Error:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+	2: from /home/gameon/gems/bin/bundle:23:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&amp;lt;main&amp;gt;&lt;span class=&quot;s1&quot;&gt;'
+	1: from /usr/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'&lt;/span&gt;
+/usr/lib/ruby/2.5.0/rubygems.rb:289:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;find_spec_for_exe&lt;span class=&quot;s1&quot;&gt;': can'&lt;/span&gt;t find gem bundler &lt;span class=&quot;o&quot;&gt;(&amp;gt;=&lt;/span&gt; 0.a&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; with executable bundle &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Gem::GemNotFoundException&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gem update &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/rbenv/rbenv/issues/1138&quot;&gt;Issue details&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="error" /><category term="notes" /><summary type="html">Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.</summary></entry><entry><title type="html">What Is Cloud Run</title><link href="http://localhost:4000/2019/11/22/What-is-cloud-run.html" rel="alternate" type="text/html" title="What Is Cloud Run" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/2019/11/22/What-is-cloud-run</id><content type="html" xml:base="http://localhost:4000/2019/11/22/What-is-cloud-run.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Essential algorithms for interviews</title><link href="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
 
 &lt;h3 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h3&gt;
 &lt;ul&gt;
@@ -26,6 +45,6 @@
   &lt;li&gt;Stack&lt;/li&gt;
   &lt;li&gt;Queue&lt;/li&gt;
   &lt;li&gt;Binary Search tree&lt;/li&gt;
-  &lt;li&gt;LRU&lt;/li&gt;
-  &lt;li&gt;LFU&lt;/li&gt;
+  &lt;li&gt;Least Recently Used Cache&lt;/li&gt;
+  &lt;li&gt;Least Frequently Used Cache&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="algorithms" /><category term="essential" /><category term="outline" /><category term="map" /><summary type="html">Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.</summary></entry></feed>
