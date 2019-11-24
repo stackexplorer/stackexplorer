@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T17:39:14-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T17:40:28-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
 
 &lt;p&gt;If you have python3 installed then it can be done using a single command:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server
@@ -67,9 +67,13 @@
 
   ERROR: (gcloud.builds.submit) build 7a43b056-0ac3-4fba-bed6-33b59fcff9b1 completed with status &quot;FAILURE&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;h1 id=&quot;cloudrun-example&quot;&gt;CloudRun example&lt;/h1&gt;
-    &lt;p&gt;In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;cloudrun-example&quot;&gt;CloudRun example&lt;/h1&gt;
+&lt;p&gt;In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;Build the app
     &lt;ul&gt;
       &lt;li&gt;Write code&lt;/li&gt;
