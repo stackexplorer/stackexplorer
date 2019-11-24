@@ -57,9 +57,7 @@
 
 <h1 id="cons">Con’s</h1>
 <ul>
-  <li>
-    <p>Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: <a href="https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running">link here</a></p>
-  </li>
+  <li>Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: <a href="https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running">link here</a></li>
   <li>Cannot configure CPU on fully-managed instance. Its possible only with on-prem Anthos.</li>
   <li>While building from docker - files need to be in current directory of host and not target subdirectory.
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Step 2/4 : COPY HelloStackExplorer-0.0.1-SNAPSHOT.jar  /HelloStackExplorer-0.0.1-SNAPSHOT.jar
@@ -104,6 +102,8 @@
 <p>You can manage costs by setting limit for memory allocated per instance, max/min number of instances.
 Reference:
 <a href="https://cloud.google.com/run/docs/configuring/max-instances" target="_blank">https://cloud.google.com/run/docs/configuring/max-instances</a></p>
+
+<p>Example command to set memory limit and max instances:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
 </code></pre></div></div>
 
