@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T12:46:30-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T17:21:02-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
 
 &lt;p&gt;If you have python3 installed then it can be done using a single command:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server
@@ -44,41 +44,59 @@
   &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/rbenv/rbenv/issues/1138&quot;&gt;Issue details&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="error" /><category term="notes" /><summary type="html">Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.</summary></entry><entry><title type="html">What is CloudRun</title><link href="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" rel="alternate" type="text/html" title="What is CloudRun" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run</id><content type="html" xml:base="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html">&lt;p&gt;Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.&lt;/p&gt;
 
+&lt;h1 id=&quot;pros&quot;&gt;Pro’s&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;Scale to zero container instances when there is no traffic.&lt;/li&gt;
   &lt;li&gt;Built on Knative and its portable across platforms and minimize lock-in&lt;/li&gt;
-  &lt;li&gt;Pay-per use model - pay only for compute used. But you cannot limit the price of cloud run from console - if your app becomes popular overnight you will get a surprise bill unless you configure something like Cost and limits.&lt;/li&gt;
-  &lt;li&gt;If you have existing GKE cluster then you can add add-on to use CloudRun in the existing GKE cluster.&lt;/li&gt;
+  &lt;li&gt;Pay-per use model - pay only for compute/mem/network used.&lt;/li&gt;
+  &lt;li&gt;If you have existing GKE cluster then there is an add-on to use CloudRun on the existing GKE cluster.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;cloudrun-example&quot;&gt;CloudRun example&lt;/h1&gt;
-&lt;p&gt;In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice.&lt;/p&gt;
-
+&lt;h1 id=&quot;cons&quot;&gt;Con’s&lt;/h1&gt;
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: &lt;a href=&quot;https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running&quot;&gt;link here&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cannot configure CPU on fully-managed instance. Its possible only with on-prem Anthos.&lt;/li&gt;
+  &lt;li&gt;While building from docker - files need to be in current directory of host and not target subdirectory.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Step 2/4 : COPY HelloStackExplorer-0.0.1-SNAPSHOT.jar  /HelloStackExplorer-0.0.1-SNAPSHOT.jar
+  COPY failed: stat /var/lib/docker/tmp/docker-builder188329130/HelloStackExplorer-0.0.1-SNAPSHOT.jar: no such file or directory
+  ERROR
+  ERROR: build step 0 &quot;gcr.io/cloud-builders/docker&quot; failed: exit status 1
+  --------------------------------------------------------------------------------
+
+  ERROR: (gcloud.builds.submit) build 7a43b056-0ac3-4fba-bed6-33b59fcff9b1 completed with status &quot;FAILURE&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h1 id=&quot;cloudrun-example&quot;&gt;CloudRun example&lt;/h1&gt;
+    &lt;p&gt;In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;Build the app
     &lt;ul&gt;
       &lt;li&gt;Write code&lt;/li&gt;
-      &lt;li&gt;Define Docker file&lt;/li&gt;
+      &lt;li&gt;Define Docker file
+  As a quick hello-world example of app with docker file created the following: &lt;a href=&quot;https://github.com/stackexplorer/HelloWorldSpringBoot&quot; target=&quot;_blank&quot;&gt;HelloWorldSpringBoot repo&lt;/a&gt;
+  Just checkout the code locally for this step.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Publish Docker image to repo
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud builds submit --tag gcr.io/myproject/hello
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud builds submit --tag gcr.io/stackexplorer-project/hello
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;Published container is submitted to the private continer registery for your project. Its not visible to others.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Deploy the docker file to CloudRun
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud beta run deploy --tag gcr.io/myproject/hello
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud run deploy --tag gcr.io/stackexplorer-project/hello
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;Provide service name and region, after successful deployment it shows the&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Alternatively you can deploy it to CloudRun on Existing GKE cluster using:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud beta run deploy --tag gcr.io/myproject/hello --cluster=mygkecluster
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud run deploy --tag gcr.io/stackexplorer-project/hello --cluster=mygkecluster
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h1 id=&quot;cost-and-limits&quot;&gt;Cost and limits&lt;/h1&gt;
-&lt;p&gt;https://stackoverflow.com/questions/27616776/how-do-i-set-a-cost-limit-in-google-developers-console
-https://cloud.google.com/apis/docs/capping-api-usage&lt;/p&gt;</content><author><name></name></author><category term="gcp" /><category term="cloudrun" /><category term="container" /><category term="managed" /><summary type="html">Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</summary></entry><entry><title type="html">Essential algorithms for interviews</title><link href="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
+&lt;p&gt;https://cloud.google.com/run/docs/configuring/max-instances&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="gcp" /><category term="cloudrun" /><category term="container" /><category term="managed" /><category term="review" /><summary type="html">Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</summary></entry><entry><title type="html">Essential algorithms for interviews</title><link href="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="http://localhost:4000/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
 
 &lt;h3 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h3&gt;
 &lt;ul&gt;

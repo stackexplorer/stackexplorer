@@ -47,41 +47,59 @@
   <div class="post-content e-content" itemprop="articleBody">
     <p>Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</p>
 
+<h1 id="pros">Pro’s</h1>
 <ul>
   <li>Scale to zero container instances when there is no traffic.</li>
   <li>Built on Knative and its portable across platforms and minimize lock-in</li>
-  <li>Pay-per use model - pay only for compute used. But you cannot limit the price of cloud run from console - if your app becomes popular overnight you will get a surprise bill unless you configure something like Cost and limits.</li>
-  <li>If you have existing GKE cluster then you can add add-on to use CloudRun in the existing GKE cluster.</li>
+  <li>Pay-per use model - pay only for compute/mem/network used.</li>
+  <li>If you have existing GKE cluster then there is an add-on to use CloudRun on the existing GKE cluster.</li>
 </ul>
 
-<h1 id="cloudrun-example">CloudRun example</h1>
-<p>In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice.</p>
-
+<h1 id="cons">Con’s</h1>
 <ul>
+  <li>
+    <p>Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: <a href="https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running">link here</a></p>
+  </li>
+  <li>Cannot configure CPU on fully-managed instance. Its possible only with on-prem Anthos.</li>
+  <li>While building from docker - files need to be in current directory of host and not target subdirectory.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Step 2/4 : COPY HelloStackExplorer-0.0.1-SNAPSHOT.jar  /HelloStackExplorer-0.0.1-SNAPSHOT.jar
+  COPY failed: stat /var/lib/docker/tmp/docker-builder188329130/HelloStackExplorer-0.0.1-SNAPSHOT.jar: no such file or directory
+  ERROR
+  ERROR: build step 0 "gcr.io/cloud-builders/docker" failed: exit status 1
+  --------------------------------------------------------------------------------
+
+  ERROR: (gcloud.builds.submit) build 7a43b056-0ac3-4fba-bed6-33b59fcff9b1 completed with status "FAILURE"
+</code></pre></div>    </div>
+    <h1 id="cloudrun-example">CloudRun example</h1>
+    <p>In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:</p>
+  </li>
   <li>Build the app
     <ul>
       <li>Write code</li>
-      <li>Define Docker file</li>
+      <li>Define Docker file
+  As a quick hello-world example of app with docker file created the following: <a href="https://github.com/stackexplorer/HelloWorldSpringBoot" target="_blank">HelloWorldSpringBoot repo</a>
+  Just checkout the code locally for this step.</li>
     </ul>
   </li>
   <li>Publish Docker image to repo
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud builds submit --tag gcr.io/myproject/hello
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud builds submit --tag gcr.io/stackexplorer-project/hello
 </code></pre></div>    </div>
     <p>Published container is submitted to the private continer registery for your project. Its not visible to others.</p>
   </li>
   <li>Deploy the docker file to CloudRun
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud beta run deploy --tag gcr.io/myproject/hello
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud run deploy --tag gcr.io/stackexplorer-project/hello
 </code></pre></div>    </div>
     <p>Provide service name and region, after successful deployment it shows the</p>
   </li>
 </ul>
 
 <p>Alternatively you can deploy it to CloudRun on Existing GKE cluster using:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud beta run deploy --tag gcr.io/myproject/hello --cluster=mygkecluster
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud run deploy --tag gcr.io/stackexplorer-project/hello --cluster=mygkecluster
 </code></pre></div></div>
 <h1 id="cost-and-limits">Cost and limits</h1>
-<p>https://stackoverflow.com/questions/27616776/how-do-i-set-a-cost-limit-in-google-developers-console
-https://cloud.google.com/apis/docs/capping-api-usage</p>
+<p>https://cloud.google.com/run/docs/configuring/max-instances</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
+</code></pre></div></div>
 
   </div><a class="u-url" href="/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" hidden></a>
 </article>
