@@ -96,8 +96,10 @@
 <p>Alternatively you can deploy it to CloudRun on Existing GKE cluster using:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud run deploy --tag gcr.io/stackexplorer-project/hello --cluster=mygkecluster
 </code></pre></div></div>
-<h1 id="cost-and-limits">Cost and limits</h1>
-<p>https://cloud.google.com/run/docs/configuring/max-instances</p>
+<h1 id="cost">Cost</h1>
+<p>You can manage costs by setting limit for memory allocated per instance, max/min number of instances.
+Reference:
+https://cloud.google.com/run/docs/configuring/max-instances</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
 </code></pre></div></div>
 
