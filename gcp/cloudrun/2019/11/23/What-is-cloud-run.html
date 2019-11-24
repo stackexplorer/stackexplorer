@@ -26,8 +26,7 @@
     ga('create', 'UA-153207332-1', 'auto');
     ga('send', 'pageview');
   
-  </script></head>
-<body><header class="site-header" role="banner">
+  </script></head><body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">StackExplorer</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -87,10 +86,11 @@
   <li>Build the app
     <ul>
       <li>Write code</li>
-      <li>Define Docker file
-  As a quick hello-world example of app with docker file created the following: <a href="https://github.com/stackexplorer/HelloWorldSpringBoot" target="_blank">HelloWorldSpringBoot repo</a>
-  Just checkout the code locally for this step.</li>
+      <li>Define Docker file</li>
     </ul>
+
+    <p>As a quick hello-world example of app with docker file created the following: <a href="https://github.com/stackexplorer/HelloWorldSpringBoot" target="_blank">HelloWorldSpringBoot repo</a>
+  Just checkout the code locally for this step.</p>
   </li>
   <li>Publish Docker image to repo
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud builds submit --tag gcr.io/stackexplorer-project/hello
@@ -105,7 +105,8 @@
 </ul>
 
 <p>Alternatively you can deploy it to CloudRun on Existing GKE cluster using:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud run deploy --tag gcr.io/stackexplorer-project/hello --cluster=mygkecluster
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud run deploy --tag gcr.io/stackexplorer-project/hello \
+        --cluster=mygkecluster
 </code></pre></div></div>
 <h1 id="cost">Cost</h1>
 <p>You can manage costs by setting limit for memory allocated per instance, max/min number of instances.
@@ -113,7 +114,8 @@ Reference:
 <a href="https://cloud.google.com/run/docs/configuring/max-instances" target="_blank">https://cloud.google.com/run/docs/configuring/max-instances</a></p>
 
 <p>Example command to set memory limit and max instances:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcloud run deploy --image gcr.io/stackexplorer-project/hello \
+            --max-instances 3 --memory 250  --platform managed
 </code></pre></div></div>
 
 
@@ -138,7 +140,7 @@ Reference:
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Stay hungry, stay foolish</p>
+        <p>Explore full stack development</p>
       </div>
     </div>
 

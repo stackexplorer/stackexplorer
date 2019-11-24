@@ -1,1 +1,3 @@
-* Google analytics
+* Feedreader
+* Publish to reddit, hacker news
+* Fix local host redirection URL

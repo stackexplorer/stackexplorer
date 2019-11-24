@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-23T19:12:01-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Stay hungry, stay foolish</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-24T09:44:08-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Explore full stack development</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
 
 &lt;p&gt;If you have python3 installed then it can be done using a single command:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server
@@ -56,10 +56,11 @@
   &lt;li&gt;Build the app
     &lt;ul&gt;
       &lt;li&gt;Write code&lt;/li&gt;
-      &lt;li&gt;Define Docker file
-  As a quick hello-world example of app with docker file created the following: &lt;a href=&quot;https://github.com/stackexplorer/HelloWorldSpringBoot&quot; target=&quot;_blank&quot;&gt;HelloWorldSpringBoot repo&lt;/a&gt;
-  Just checkout the code locally for this step.&lt;/li&gt;
+      &lt;li&gt;Define Docker file&lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;p&gt;As a quick hello-world example of app with docker file created the following: &lt;a href=&quot;https://github.com/stackexplorer/HelloWorldSpringBoot&quot; target=&quot;_blank&quot;&gt;HelloWorldSpringBoot repo&lt;/a&gt;
+  Just checkout the code locally for this step.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Publish Docker image to repo
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud builds submit --tag gcr.io/stackexplorer-project/hello
@@ -74,7 +75,8 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Alternatively you can deploy it to CloudRun on Existing GKE cluster using:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud run deploy --tag gcr.io/stackexplorer-project/hello --cluster=mygkecluster
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud run deploy --tag gcr.io/stackexplorer-project/hello \
+        --cluster=mygkecluster
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h1 id=&quot;cost&quot;&gt;Cost&lt;/h1&gt;
 &lt;p&gt;You can manage costs by setting limit for memory allocated per instance, max/min number of instances.
@@ -82,7 +84,8 @@ Reference:
 &lt;a href=&quot;https://cloud.google.com/run/docs/configuring/max-instances&quot; target=&quot;_blank&quot;&gt;https://cloud.google.com/run/docs/configuring/max-instances&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Example command to set memory limit and max instances:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; gcloud run deploy --image gcr.io/stackexplorer-project/hello \
+            --max-instances 3 --memory 250  --platform managed
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="gcp" /><category term="cloudrun" /><category term="container" /><category term="managed" /><category term="review" /><summary type="html">Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</summary></entry><entry><title type="html">Bundler error</title><link href="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html" rel="alternate" type="text/html" title="Bundler error" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>http://localhost:4000/error/notes/2019/11/22/Bundler-error</id><content type="html" xml:base="http://localhost:4000/error/notes/2019/11/22/Bundler-error.html">&lt;p&gt;Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
