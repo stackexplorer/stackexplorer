@@ -1,3 +1,4 @@
+bundle exec jekyll b
 cp -R _site/* ../stackexplorer.github.io/ 
 git add .
 git commit -m 'Publish' 
