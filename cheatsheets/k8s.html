@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://stackexplorer.github.io/cheatsheets/k8s" />
 <meta property="og:site_name" content="StackExplorer" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-24T00:00:00-07:00" />
+<meta property="article:published_time" content="2021-01-19T00:00:00-08:00" />
 <script type="application/ld+json">
-{"dateModified":"2021-04-24T00:00:00-07:00","datePublished":"2021-04-24T00:00:00-07:00","@type":"BlogPosting","headline":"Kubernetes Cheatsheet","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackexplorer.github.io/cheatsheets/k8s"},"url":"https://stackexplorer.github.io/cheatsheets/k8s","description":"Explore full stack development","@context":"https://schema.org"}</script>
+{"dateModified":"2021-01-19T00:00:00-08:00","datePublished":"2021-01-19T00:00:00-08:00","@type":"BlogPosting","headline":"Kubernetes Cheatsheet","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackexplorer.github.io/cheatsheets/k8s"},"url":"https://stackexplorer.github.io/cheatsheets/k8s","description":"Explore full stack development","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://stackexplorer.github.io/feed.xml" title="StackExplorer" /><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -48,28 +48,43 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Kubernetes Cheatsheet</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2021-04-24T00:00:00-07:00" itemprop="datePublished">Apr 24, 2021
+      <time class="dt-published" datetime="2021-01-19T00:00:00-08:00" itemprop="datePublished">Jan 19, 2021
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    
-<p>Edit crontab:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab <span class="nt">-e</span>
+    <ul id="markdown-toc">
+  <li><a href="#get-pods-in-a-namespace" id="markdown-toc-get-pods-in-a-namespace">Get pods in a namespace</a></li>
+  <li><a href="#restart-a-service" id="markdown-toc-restart-a-service">Restart a service</a></li>
+  <li><a href="#get-logs-from-pod" id="markdown-toc-get-logs-from-pod">Get logs from pod</a></li>
+  <li><a href="#list-all-namespaces-in-a-kubernetes-cluster" id="markdown-toc-list-all-namespaces-in-a-kubernetes-cluster">List all namespaces in a kubernetes cluster</a></li>
+  <li><a href="#list-all-resources-in-a-namespace" id="markdown-toc-list-all-resources-in-a-namespace">List all resources in a namespace</a></li>
+  <li><a href="#access-shell-in-a-pod" id="markdown-toc-access-shell-in-a-pod">Access shell in a pod</a></li>
+</ul>
+
+<h3 id="get-pods-in-a-namespace">Get pods in a namespace</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> &lt;name_space&gt; | <span class="nb">grep</span> &lt;seach_pod_prefix&gt;
 </code></pre></div></div>
 
-<p>Check log files:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep </span>CRON /var/log/syslog
+<h3 id="restart-a-service">Restart a service</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl rollout restart deployment &lt;service&gt; <span class="nt">-n</span> &lt;name_space&gt;
 </code></pre></div></div>
 
-<p>Cron job format at midnight:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 0 * * *
+<h3 id="get-logs-from-pod">Get logs from pod</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs &lt;pod_name&gt;  <span class="nt">-n</span> &lt;namespace&gt; &lt;container_name&gt;
 </code></pre></div></div>
 
-<p>Format</p>
-<min> <hour> &lt;day(month)&gt; <month> &lt;day(week)&gt;
-https://crontab.guru/every-5-minutes
-</month></hour></min>
+<h3 id="list-all-namespaces-in-a-kubernetes-cluster">List all namespaces in a kubernetes cluster</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ns
+</code></pre></div></div>
+
+<h3 id="list-all-resources-in-a-namespace">List all resources in a namespace</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get all <span class="nt">-n</span> &lt;name_space&gt;
+</code></pre></div></div>
+
+<h3 id="access-shell-in-a-pod">Access shell in a pod</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> &lt;pod_name&gt; bash
+</code></pre></div></div>
 
   </div><a class="u-url" href="/cheatsheets/k8s" hidden></a>
 </article>
