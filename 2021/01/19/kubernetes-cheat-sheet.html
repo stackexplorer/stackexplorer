@@ -1,0 +1,35 @@
+<hr />
+<p>layout: post
+title: Kubernetes Cheatsheet
+categories: [kubernetes, cheatsheet]
+published: true
+tags: [kubernetes, cheatsheet]
+permalink: /cheatsheets/k8s
+–</p>
+<ul id="markdown-toc">
+  <li><a href="#get-pods-in-a-namespace" id="markdown-toc-get-pods-in-a-namespace">Get pods in a namespace</a></li>
+  <li><a href="#restart-a-service" id="markdown-toc-restart-a-service">Restart a service</a></li>
+  <li><a href="#get-logs-from-pod" id="markdown-toc-get-logs-from-pod">Get logs from pod</a></li>
+  <li><a href="#list-all-namespaces-in-a-kubernetes-cluster" id="markdown-toc-list-all-namespaces-in-a-kubernetes-cluster">List all namespaces in a kubernetes cluster</a></li>
+  <li><a href="#list-all-resources-in-a-namespace" id="markdown-toc-list-all-resources-in-a-namespace">List all resources in a namespace</a></li>
+</ul>
+
+<h3 id="get-pods-in-a-namespace">Get pods in a namespace</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> &lt;name_space&gt;
+</code></pre></div></div>
+
+<h3 id="restart-a-service">Restart a service</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl rollout restart deployment &lt;service&gt; <span class="nt">-n</span> &lt;name_space&gt;
+</code></pre></div></div>
+
+<h3 id="get-logs-from-pod">Get logs from pod</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs &lt;pod_name&gt;  <span class="nt">-n</span> &lt;namespace&gt; &lt;container_name&gt;
+</code></pre></div></div>
+
+<h3 id="list-all-namespaces-in-a-kubernetes-cluster">List all namespaces in a kubernetes cluster</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ns
+</code></pre></div></div>
+
+<h3 id="list-all-resources-in-a-namespace">List all resources in a namespace</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get all <span class="nt">-n</span> &lt;name_space&gt;
+</code></pre></div></div>

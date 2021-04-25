@@ -1,149 +1,188 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://stackexplorer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://stackexplorer.github.io/" rel="alternate" type="text/html" /><updated>2019-12-06T21:07:50-08:00</updated><id>https://stackexplorer.github.io/feed.xml</id><title type="html">StackExplorer</title><subtitle>Explore full stack development</subtitle><entry><title type="html">git add all changes and commit</title><link href="https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit.html" rel="alternate" type="text/html" title="git add all changes and commit" /><published>2019-11-27T00:00:00-08:00</published><updated>2019-11-27T00:00:00-08:00</updated><id>https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit</id><content type="html" xml:base="https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit.html">&lt;p&gt;If you want to commit all changes - both new files and modified files then use the following command:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all &amp;amp;&amp;amp; git commit -m &quot;commit message&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Alternatively this command achieves the same result:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add . &amp;amp;&amp;amp; git commit -m &quot;commit message&quot;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://stackexplorer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://stackexplorer.github.io/" rel="alternate" type="text/html" /><updated>2021-04-25T10:07:43-07:00</updated><id>https://stackexplorer.github.io/feed.xml</id><title type="html">StackExplorer</title><subtitle>Explore full stack development</subtitle><entry><title type="html">Amazon Algo Sd Questions</title><link href="https://stackexplorer.github.io/2021/04/25/amazon-algo-sd-questions.html" rel="alternate" type="text/html" title="Amazon Algo Sd Questions" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>https://stackexplorer.github.io/2021/04/25/amazon-algo-sd-questions</id><content type="html" xml:base="https://stackexplorer.github.io/2021/04/25/amazon-algo-sd-questions.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">System Design Notes</title><link href="https://stackexplorer.github.io/2021/04/25/system-design-notes.html" rel="alternate" type="text/html" title="System Design Notes" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>https://stackexplorer.github.io/2021/04/25/system-design-notes</id><content type="html" xml:base="https://stackexplorer.github.io/2021/04/25/system-design-notes.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Kubernetes Cheatsheet</title><link href="https://stackexplorer.github.io/cheatsheets/k8s" rel="alternate" type="text/html" title="Kubernetes Cheatsheet" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>https://stackexplorer.github.io/cheatsheets/cron-cheat-sheet</id><content type="html" xml:base="https://stackexplorer.github.io/cheatsheets/k8s">&lt;p&gt;Edit crontab:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Even though the following command looks to achieves the same result, but it does not. Following command only adds the modified files and &lt;strong&gt;ignores newly added files&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git -am &quot;commit message&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><category term="howto" /><category term="tip" /><summary type="html">If you want to commit all changes - both new files and modified files then use the following command:</summary></entry><entry><title type="html">How to run a local webserver from any directory</title><link href="https://stackexplorer.github.io/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2019-11-23T12:25:00-08:00</published><updated>2019-11-23T12:25:00-08:00</updated><id>https://stackexplorer.github.io/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver</id><content type="html" xml:base="https://stackexplorer.github.io/howto/webserver/2019/11/23/2019-11-23-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
-
-&lt;p&gt;If you have python3 installed then it can be done using a single command:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This by default runs on port 8000. Optionally you can configure the port by running the following command:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server 9000
+&lt;p&gt;Check log files:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;CRON /var/log/syslog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Its a blocking command and you get the access logs for each access from browser to know whats happening:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
-127.0.0.1 - - [23/Nov/2019 12:30:20] &quot;GET / HTTP/1.1&quot; 200 -
-127.0.0.1 - - [23/Nov/2019 12:30:20] code 404, message File not found
-127.0.0.1 - - [23/Nov/2019 12:30:20] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -
-127.0.0.1 - - [23/Nov/2019 12:30:26] &quot;GET /cloudrun/ HTTP/1.1&quot; 200 -
-127.0.0.1 - - [23/Nov/2019 12:30:27] &quot;GET /cloudrun/2019/ HTTP/1.1&quot; 200 -
-127.0.0.1 - - [23/Nov/2019 12:30:29] &quot;GET /cloudrun/2019/11/ HTTP/1.1&quot; 200 -
-127.0.0.1 - - [23/Nov/2019 12:30:30] &quot;GET /cloudrun/2019/11/22/ HTTP/1.1&quot; 200 -
-127.0.0.1 - - [23/Nov/2019 12:30:30] &quot;GET /cloudrun/2019/11/22/What-is-cloud-run.html HTTP/1.1&quot; 200 -
+&lt;p&gt;Cron job format at midnight:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 0 * * *
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Reference:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/http.server.html&quot;&gt;https://docs.python.org/3/library/http.server.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="[&quot;howto&quot;, &quot;webserver&quot;]" /><category term="howto" /><category term="webserver" /><category term="local" /><summary type="html">You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.</summary></entry><entry><title type="html">What is CloudRun</title><link href="https://stackexplorer.github.io/gcp/cloudrun/2019/11/23/What-is-cloud-run.html" rel="alternate" type="text/html" title="What is CloudRun" /><published>2019-11-23T00:00:00-08:00</published><updated>2019-11-23T00:00:00-08:00</updated><id>https://stackexplorer.github.io/gcp/cloudrun/2019/11/23/What-is-cloud-run</id><content type="html" xml:base="https://stackexplorer.github.io/gcp/cloudrun/2019/11/23/What-is-cloud-run.html">&lt;p&gt;Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.&lt;/p&gt;
+&lt;p&gt;Format&lt;/p&gt;
+&lt;min&gt; &lt;hour&gt; &amp;lt;day(month)&amp;gt; &lt;month&gt; &amp;lt;day(week)&amp;gt;
+https://crontab.guru/every-5-minutes
+&lt;/month&gt;&lt;/hour&gt;&lt;/min&gt;</content><author><name></name></author><category term="kubernetes" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Linux Cheatsheet</title><link href="https://stackexplorer.github.io/cheatsheets/linux" rel="alternate" type="text/html" title="Linux Cheatsheet" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>https://stackexplorer.github.io/cheatsheets/linux-cheat-sheet</id><content type="html" xml:base="https://stackexplorer.github.io/cheatsheets/linux">&lt;p&gt;Create symbolic link. It can be a file or folder.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;source_path&amp;gt; &amp;lt;target_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;pros&quot;&gt;Pro’s&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Scale to zero container instances when there is no traffic.&lt;/li&gt;
-  &lt;li&gt;Built on Knative and its portable across platforms and minimize lock-in&lt;/li&gt;
-  &lt;li&gt;Pay-per use model - pay only for compute/mem/network used.&lt;/li&gt;
-  &lt;li&gt;If you have existing GKE cluster then there is an add-on to use CloudRun on the existing GKE cluster.&lt;/li&gt;
+&lt;p&gt;Find any file in linux&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find /dir &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;file_name.ext&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="linux" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Algo Notes</title><link href="https://stackexplorer.github.io/notes/algo" rel="alternate" type="text/html" title="Algo Notes" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>https://stackexplorer.github.io/notes/algo-notes</id><content type="html" xml:base="https://stackexplorer.github.io/notes/algo"></content><author><name></name></author><category term="notes" /><category term="algo" /></entry><entry><title type="html">Key Algorithm questions</title><link href="https://stackexplorer.github.io/interview/algos" rel="alternate" type="text/html" title="Key Algorithm questions" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>https://stackexplorer.github.io/interview/key-algos</id><content type="html" xml:base="https://stackexplorer.github.io/interview/algos">&lt;ul&gt;
+  &lt;li&gt;Alien Dictionary&lt;/li&gt;
+  &lt;li&gt;Regex&lt;/li&gt;
+  &lt;li&gt;Trapping Rain water&lt;/li&gt;
+  &lt;li&gt;Edit Distance&lt;/li&gt;
+  &lt;li&gt;Text Justification&lt;/li&gt;
+  &lt;li&gt;Merge Ksorted lists&lt;/li&gt;
+  &lt;li&gt;Sliding Window Maximum&lt;/li&gt;
+  &lt;li&gt;LFU Cache&lt;/li&gt;
+  &lt;li&gt;Minimum window substring&lt;/li&gt;
+  &lt;li&gt;Vertical order traversal of binary tree&lt;/li&gt;
+  &lt;li&gt;Burst balloons&lt;/li&gt;
+  &lt;li&gt;N Queens&lt;/li&gt;
+  &lt;li&gt;Design Auto complete system&lt;/li&gt;
+  &lt;li&gt;Skyline&lt;/li&gt;
+  &lt;li&gt;Best time to buy and sell stocks IV&lt;/li&gt;
+  &lt;li&gt;Word Ladder&lt;/li&gt;
+  &lt;li&gt;Max profit in Job scheduling&lt;/li&gt;
+  &lt;li&gt;Critical connections in a network&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="algo" /><category term="list" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">Ultimate Behavior Questions</title><link href="https://stackexplorer.github.io/interview/behavior" rel="alternate" type="text/html" title="Ultimate Behavior Questions" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>https://stackexplorer.github.io/interview/Ultimate-Behavior-questions</id><content type="html" xml:base="https://stackexplorer.github.io/interview/behavior">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#topics&quot; id=&quot;markdown-toc-topics&quot;&gt;Topics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#links&quot; id=&quot;markdown-toc-links&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;cons&quot;&gt;Con’s&lt;/h1&gt;
+&lt;h3 id=&quot;topics&quot;&gt;Topics&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: &lt;a href=&quot;https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running&quot;&gt;link here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Cannot configure CPU on fully-managed instance. Its possible only with on-prem Anthos.&lt;/li&gt;
-  &lt;li&gt;While building from docker - files need to be in current directory of host and not target subdirectory.
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Step 2/4 : COPY HelloStackExplorer-0.0.1-SNAPSHOT.jar  /HelloStackExplorer-0.0.1-SNAPSHOT.jar
-  COPY failed: stat /var/lib/docker/tmp/docker-builder188329130/HelloStackExplorer-0.0.1-SNAPSHOT.jar: no such file or directory
-  ERROR
-  ERROR: build step 0 &quot;gcr.io/cloud-builders/docker&quot; failed: exit status 1
-  --------------------------------------------------------------------------------
-
-  ERROR: (gcloud.builds.submit) build 7a43b056-0ac3-4fba-bed6-33b59fcff9b1 completed with status &quot;FAILURE&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;cloudrun-example&quot;&gt;CloudRun example&lt;/h1&gt;
-&lt;p&gt;In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Build the app
+  &lt;li&gt;&lt;strong&gt;Innovation&lt;/strong&gt;
     &lt;ul&gt;
-      &lt;li&gt;Write code&lt;/li&gt;
-      &lt;li&gt;Define Docker file&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;As a quick hello-world example of app with docker file created the following: &lt;a href=&quot;https://github.com/stackexplorer/HelloWorldSpringBoot&quot; target=&quot;_blank&quot;&gt;HelloWorldSpringBoot repo&lt;/a&gt;
-  Just checkout the code locally for this step.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Publish Docker image to repo
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud builds submit --tag gcr.io/stackexplorer-project/hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;Published container is submitted to the private continer registery for your project. Its not visible to others.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Deploy the docker file to CloudRun
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud run deploy --tag gcr.io/stackexplorer-project/hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;Provide service name and region, after successful deployment it shows the&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Alternatively you can deploy it to CloudRun on Existing GKE cluster using:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud run deploy --tag gcr.io/stackexplorer-project/hello \
-        --cluster=mygkecluster
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;cost&quot;&gt;Cost&lt;/h1&gt;
-&lt;p&gt;You can manage costs by setting limit for memory allocated per instance, max/min number of instances.
-Reference:
-&lt;a href=&quot;https://cloud.google.com/run/docs/configuring/max-instances&quot; target=&quot;_blank&quot;&gt;https://cloud.google.com/run/docs/configuring/max-instances&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Example command to set memory limit and max instances:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; gcloud run deploy --image gcr.io/stackexplorer-project/hello \
-            --max-instances 3 --memory 250  --platform managed
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="gcp" /><category term="cloudrun" /><category term="container" /><category term="managed" /><category term="review" /><summary type="html">Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.</summary></entry><entry><title type="html">Bundler error</title><link href="https://stackexplorer.github.io/error/notes/2019/11/22/Bundler-error.html" rel="alternate" type="text/html" title="Bundler error" /><published>2019-11-22T00:00:00-08:00</published><updated>2019-11-22T00:00:00-08:00</updated><id>https://stackexplorer.github.io/error/notes/2019/11/22/Bundler-error</id><content type="html" xml:base="https://stackexplorer.github.io/error/notes/2019/11/22/Bundler-error.html">&lt;p&gt;Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Error:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-	2: from /home/gameon/gems/bin/bundle:23:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&amp;lt;main&amp;gt;&lt;span class=&quot;s1&quot;&gt;'
-	1: from /usr/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'&lt;/span&gt;
-/usr/lib/ruby/2.5.0/rubygems.rb:289:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;find_spec_for_exe&lt;span class=&quot;s1&quot;&gt;': can'&lt;/span&gt;t find gem bundler &lt;span class=&quot;o&quot;&gt;(&amp;gt;=&lt;/span&gt; 0.a&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; with executable bundle &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Gem::GemNotFoundException&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Fix:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gem update &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/rbenv/rbenv/issues/1138&quot;&gt;Issue details&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="error" /><category term="notes" /><summary type="html">Bundle install results in the following error - seems bundler is not installed properly. gem update command listed below solved the problem.</summary></entry><entry><title type="html">Essential algorithms for interviews</title><link href="https://stackexplorer.github.io/algorithms/essential/2019/10/13/must-know-algo-interview.html" rel="alternate" type="text/html" title="Essential algorithms for interviews" /><published>2019-10-13T00:00:00-07:00</published><updated>2019-10-13T00:00:00-07:00</updated><id>https://stackexplorer.github.io/algorithms/essential/2019/10/13/must-know-algo-interview</id><content type="html" xml:base="https://stackexplorer.github.io/algorithms/essential/2019/10/13/must-know-algo-interview.html">&lt;p&gt;Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.&lt;/p&gt;
-
-&lt;h3 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Binary Search&lt;/li&gt;
-  &lt;li&gt;Depth First Search (DFS)&lt;/li&gt;
-  &lt;li&gt;Breadth First Search (BFS)&lt;/li&gt;
-  &lt;li&gt;Sorting
-    &lt;ul&gt;
-      &lt;li&gt;Merge sort&lt;/li&gt;
-      &lt;li&gt;Quick sort&lt;/li&gt;
+      &lt;li&gt;Whats the most innovative idea you implemented? Why its innovative?&lt;/li&gt;
+      &lt;li&gt;Proudest professional accomplishment&lt;/li&gt;
+      &lt;li&gt;Describe a situation in which you found a creative way to overcome an obstacle or when you did not have time to solve all the problems which PM brought? Tell me about a time when you came up with a new approach to a problems&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Dynamic Programming&lt;/li&gt;
-  &lt;li&gt;Backtracking&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Conflicts&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tell me about the last time a customer or coworker got upset with you&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Complex tech challenges&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pressure&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;A project you are through more than 75% and had to pivot&lt;/li&gt;
+      &lt;li&gt;Tell me about the toughest decision you’ve had to make in the past six months&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Failure&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tell me about a time when you failed and how you handled failure/learnt&lt;/li&gt;
+      &lt;li&gt;Mistake - Tell me about a time you wish you’d handled a situation differently with a colleague? What’s your greatest professional regret?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Saying no and persuading&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;How do you pushback or challenge a decision from top/peer?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mentoring&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Example of a peer or junior struggling and helped&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ownership and Multiple responsibilities&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tell me a time when you went above and beyond, outside your responsibility&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;datastructures&quot;&gt;Datastructures&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Why Looking for a change? Why this company?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Hashmap&lt;/li&gt;
-  &lt;li&gt;Heap: Max and Min&lt;/li&gt;
-  &lt;li&gt;Trie&lt;/li&gt;
-  &lt;li&gt;Linked List (single and doubly)&lt;/li&gt;
-  &lt;li&gt;Array List&lt;/li&gt;
-  &lt;li&gt;Set&lt;/li&gt;
-  &lt;li&gt;Stack&lt;/li&gt;
-  &lt;li&gt;Queue&lt;/li&gt;
-  &lt;li&gt;Binary Search tree&lt;/li&gt;
-  &lt;li&gt;Least Recently Used Cache&lt;/li&gt;
-  &lt;li&gt;Least Frequently Used Cache&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="algorithms" /><category term="essential" /><category term="outline" /><category term="map" /><summary type="html">Following are the top list of datastructures and algorithms you must master to confidently clear the technical interviews - this gives a high level map of Data Structure and Algorithms to prepare for interviews.</summary></entry></feed>
+  &lt;li&gt;&lt;a href=&quot;https://leetcode.com/discuss/interview-question/437631/Amazon-Leadership-Principle-(Behavioral)-Questions&quot;&gt;Amazon LP Questions &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.jobs/en/principles&quot;&gt;Amazon LP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jobs.netflix.com/culture&quot;&gt;Netflix LP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/careers/facebook-life/&quot;&gt;Facebook LP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="behavior" /><category term="list" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">Architecture of Systems</title><link href="https://stackexplorer.github.io/interview/sd" rel="alternate" type="text/html" title="Architecture of Systems" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>https://stackexplorer.github.io/interview/systems</id><content type="html" xml:base="https://stackexplorer.github.io/interview/sd">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#systems&quot; id=&quot;markdown-toc-systems&quot;&gt;Systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#object-oriented-design&quot; id=&quot;markdown-toc-object-oriented-design&quot;&gt;Object oriented design&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#distributed-system&quot; id=&quot;markdown-toc-distributed-system&quot;&gt;Distributed System&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#concepts&quot; id=&quot;markdown-toc-concepts&quot;&gt;Concepts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#talks&quot; id=&quot;markdown-toc-talks&quot;&gt;Talks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(System Design tempate) [https://leetcode.com/discuss/career/229177/My-System-Design-Template]&lt;/p&gt;
+
+&lt;h3 id=&quot;systems&quot;&gt;Systems&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reddit&lt;/li&gt;
+  &lt;li&gt;Robinhood&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/interview/sd/twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Youtube&lt;/li&gt;
+  &lt;li&gt;Netflix&lt;/li&gt;
+  &lt;li&gt;Yelp&lt;/li&gt;
+  &lt;li&gt;Uber&lt;/li&gt;
+  &lt;li&gt;Ticket Master&lt;/li&gt;
+  &lt;li&gt;Slack&lt;/li&gt;
+  &lt;li&gt;Google&lt;/li&gt;
+  &lt;li&gt;Gmail&lt;/li&gt;
+  &lt;li&gt;Pastebin&lt;/li&gt;
+  &lt;li&gt;Dropbox&lt;/li&gt;
+  &lt;li&gt;Airbnb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;object-oriented-design&quot;&gt;Object oriented design&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Elevator design&lt;/li&gt;
+  &lt;li&gt;Cofee vending machine&lt;/li&gt;
+  &lt;li&gt;Comment filtering system&lt;/li&gt;
+  &lt;li&gt;Design Chess&lt;/li&gt;
+  &lt;li&gt;Parking lot&lt;/li&gt;
+  &lt;li&gt;Amazon locker&lt;/li&gt;
+  &lt;li&gt;Rate limiter
+Frequent call amazon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;distributed-system&quot;&gt;Distributed System&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cache&lt;/li&gt;
+  &lt;li&gt;Message queue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;concepts&quot;&gt;Concepts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Consistent Hashing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;talks&quot;&gt;Talks&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Y6Ev8GIlbxc&quot;&gt;Distributed System in one lesson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tpspO9K28PM&amp;amp;t=2037s&quot;&gt;Four distributed Architecture patterns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=X40EozwK75s&quot;&gt;Event streaming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=996OiexHze0&quot;&gt;OAuth 2.0 in plain english&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=UEAMfLPZZhE&amp;amp;list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&quot;&gt;Distributed Systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=CZ3wIuvmHeM&amp;amp;t=47s&quot;&gt;Mastering Chaos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=yqc3PPmHvrA&amp;amp;list=RDCMUCkQX1tChV7Z7l1LFF4L9j_g&amp;amp;index=5&quot;&gt;Streaming million like/second&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Scaling instagram&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6w6E_B55p0E&quot;&gt;Scaling push messages Netflix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="sd" /><category term="list" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">Twitter Architecture</title><link href="https://stackexplorer.github.io/interview/sd/twitter" rel="alternate" type="text/html" title="Twitter Architecture" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>https://stackexplorer.github.io/interview/sd/twitter</id><content type="html" xml:base="https://stackexplorer.github.io/interview/sd/twitter">&lt;p&gt;Microblog&lt;/p&gt;</content><author><name></name></author><category term="sd" /><category term="twitter" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">Microblog using Firebase, Java</title><link href="https://stackexplorer.github.io/course/microblog" rel="alternate" type="text/html" title="Microblog using Firebase, Java" /><published>2021-01-23T00:00:00-08:00</published><updated>2021-01-23T00:00:00-08:00</updated><id>https://stackexplorer.github.io/course/microblog-series</id><content type="html" xml:base="https://stackexplorer.github.io/course/microblog">&lt;p&gt;Scope:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Post text, Image&lt;/li&gt;
+  &lt;li&gt;Users follow other users&lt;/li&gt;
+  &lt;li&gt;Timeline - Chronological&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Data Model:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;User&lt;/li&gt;
+  &lt;li&gt;Post&lt;/li&gt;
+  &lt;li&gt;Follower&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Active users:
+300m DAU
+200 QPS?&lt;/p&gt;
+
+&lt;p&gt;Implementation:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Post&lt;/li&gt;
+  &lt;li&gt;Users follow&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Flows:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Login - API Authentication and Authorization&lt;/li&gt;
+  &lt;li&gt;Firebase persistence&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="microblog" /><category term="course" /><summary type="html"></summary></entry></feed>

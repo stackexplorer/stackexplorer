@@ -3,19 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>git add all changes and commit | StackExplorer</title>
+<title>Kubernetes Cheatsheet | StackExplorer</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="git add all changes and commit" />
+<meta property="og:title" content="Kubernetes Cheatsheet" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="If you want to commit all changes - both new files and modified files then use the following command:" />
-<meta property="og:description" content="If you want to commit all changes - both new files and modified files then use the following command:" />
-<link rel="canonical" href="https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit.html" />
-<meta property="og:url" content="https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit.html" />
+<meta name="description" content="Get pods in a namespace kubectl get pods -n" />
+<meta property="og:description" content="Get pods in a namespace kubectl get pods -n" />
+<link rel="canonical" href="https://stackexplorer.github.io/kubernetes/cheatsheet/2020/01/19/kubernetes-cheat-sheet.html" />
+<meta property="og:url" content="https://stackexplorer.github.io/kubernetes/cheatsheet/2020/01/19/kubernetes-cheat-sheet.html" />
 <meta property="og:site_name" content="StackExplorer" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-11-27T00:00:00-08:00" />
+<meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
 <script type="application/ld+json">
-{"dateModified":"2019-11-27T00:00:00-08:00","datePublished":"2019-11-27T00:00:00-08:00","@type":"BlogPosting","headline":"git add all changes and commit","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit.html"},"url":"https://stackexplorer.github.io/git/howto/2019/11/27/git-add-all-commit.html","description":"If you want to commit all changes - both new files and modified files then use the following command:","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Kubernetes Cheatsheet","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","url":"https://stackexplorer.github.io/kubernetes/cheatsheet/2020/01/19/kubernetes-cheat-sheet.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackexplorer.github.io/kubernetes/cheatsheet/2020/01/19/kubernetes-cheat-sheet.html"},"description":"Get pods in a namespace kubectl get pods -n","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://stackexplorer.github.io/feed.xml" title="StackExplorer" /><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -46,27 +46,29 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">git add all changes and commit</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Kubernetes Cheatsheet</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2019-11-27T00:00:00-08:00" itemprop="datePublished">Nov 27, 2019
+      <time class="dt-published" datetime="2020-01-19T00:00:00+00:00" itemprop="datePublished">Jan 19, 2020
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>If you want to commit all changes - both new files and modified files then use the following command:</p>
+    <h2 id="get-pods-in-a-namespace">Get pods in a namespace</h2>
+<p>kubectl get pods -n <name_space></name_space></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add --all &amp;&amp; git commit -m "commit message"
-</code></pre></div></div>
-<p>Alternatively this command achieves the same result:</p>
+<h2 id="restart-a-service">Restart a service</h2>
+<p>kubectl rollout restart deployment <service> -n <name_space></name_space></service></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add . &amp;&amp; git commit -m "commit message"
-</code></pre></div></div>
+<h2 id="get-logs-from-pod">Get logs from pod</h2>
+<p>kubectl logs <pod_name>  -n <namespace> <container_name></container_name></namespace></pod_name></p>
 
-<p>Even though the following command looks to achieves the same result, but it does not. Following command only adds the modified files and <strong>ignores newly added files</strong>:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git -am "commit message"
-</code></pre></div></div>
+<h2 id="list-all-namespaces-in-a-kubernetes-cluster">List all namespaces in a kubernetes cluster</h2>
+<p>kubectl get ns</p>
 
-  </div><a class="u-url" href="/git/howto/2019/11/27/git-add-all-commit.html" hidden></a>
+<h2 id="list-all-resources-in-a-namespace">List all resources in a namespace</h2>
+<p>kubectl get all -n <name_space></name_space></p>
+
+  </div><a class="u-url" href="/kubernetes/cheatsheet/2020/01/19/kubernetes-cheat-sheet.html" hidden></a>
 </article>
 
       </div>

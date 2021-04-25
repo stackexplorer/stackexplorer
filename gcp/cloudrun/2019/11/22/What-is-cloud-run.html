@@ -9,16 +9,24 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA." />
 <meta property="og:description" content="Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA." />
-<link rel="canonical" href="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" />
-<meta property="og:url" content="http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" />
+<link rel="canonical" href="https://stackexplorer.github.io/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" />
+<meta property="og:url" content="https://stackexplorer.github.io/gcp/cloudrun/2019/11/22/What-is-cloud-run.html" />
 <meta property="og:site_name" content="StackExplorer" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-22T00:00:00-08:00" />
 <script type="application/ld+json">
-{"description":"Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.","@type":"BlogPosting","url":"http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html","headline":"What is CloudRun","datePublished":"2019-11-22T00:00:00-08:00","dateModified":"2019-11-22T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/gcp/cloudrun/2019/11/22/What-is-cloud-run.html"},"@context":"https://schema.org"}</script>
+{"dateModified":"2019-11-22T00:00:00-08:00","datePublished":"2019-11-22T00:00:00-08:00","@type":"BlogPosting","headline":"What is CloudRun","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackexplorer.github.io/gcp/cloudrun/2019/11/22/What-is-cloud-run.html"},"url":"https://stackexplorer.github.io/gcp/cloudrun/2019/11/22/What-is-cloud-run.html","description":"Cloud run is what i expected Appengine to be - A container plantform without any proprietary API’s or restrictions. Cloudrun recently announced GA.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="StackExplorer" /></head>
-<body><header class="site-header" role="banner">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://stackexplorer.github.io/feed.xml" title="StackExplorer" /><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-153207332-1', 'auto');
+    ga('send', 'pageview');
+  
+  </script></head><body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">StackExplorer</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -57,7 +65,9 @@
 
 <h1 id="cons">Con’s</h1>
 <ul>
-  <li>Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: <a href="https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running">link here</a></li>
+  <li>
+    <p>Currently you cannot check the current number of active instances. It isn’t clear if the instance was shutdown when there is no traffic. Additional reference: <a href="https://stackoverflow.com/questions/55911941/how-can-i-check-how-many-instances-of-a-google-cloud-run-container-are-running">link here</a></p>
+  </li>
   <li>Cannot configure CPU on fully-managed instance. Its possible only with on-prem Anthos.</li>
   <li>While building from docker - files need to be in current directory of host and not target subdirectory.
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Step 2/4 : COPY HelloStackExplorer-0.0.1-SNAPSHOT.jar  /HelloStackExplorer-0.0.1-SNAPSHOT.jar
@@ -68,13 +78,9 @@
 
   ERROR: (gcloud.builds.submit) build 7a43b056-0ac3-4fba-bed6-33b59fcff9b1 completed with status "FAILURE"
 </code></pre></div>    </div>
+    <h1 id="cloudrun-example">CloudRun example</h1>
+    <p>In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:</p>
   </li>
-</ul>
-
-<h1 id="cloudrun-example">CloudRun example</h1>
-<p>In order to use CloudRun you just need to buld and deploy your application as container with any language/tools of your choice. Following steps give an example of running hello world web application:</p>
-
-<ul>
   <li>Build the app
     <ul>
       <li>Write code</li>
@@ -98,12 +104,8 @@
 <p>Alternatively you can deploy it to CloudRun on Existing GKE cluster using:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud run deploy --tag gcr.io/stackexplorer-project/hello --cluster=mygkecluster
 </code></pre></div></div>
-<h1 id="cost">Cost</h1>
-<p>You can manage costs by setting limit for memory allocated per instance, max/min number of instances.
-Reference:
-<a href="https://cloud.google.com/run/docs/configuring/max-instances" target="_blank">https://cloud.google.com/run/docs/configuring/max-instances</a></p>
-
-<p>Example command to set memory limit and max instances:</p>
+<h1 id="cost-and-limits">Cost and limits</h1>
+<p>https://cloud.google.com/run/docs/configuring/max-instances</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcloud run deploy --image gcr.io/stackexplorer-project/hello --max-instances 3 --memory 250  --platform managed
 </code></pre></div></div>
 
@@ -124,11 +126,11 @@ Reference:
           <li class="p-name">StackExplorer</li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.twitter.com/stackexplorer"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">stackexplorer</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Stay hungry, stay foolish</p>
+        <p>Explore full stack development</p>
       </div>
     </div>
 
