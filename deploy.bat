@@ -1,7 +1,7 @@
-git pull origin master
-bundle exec jekyll b --watch
+@REM git pull origin master
+@REM bundle exec jekyll b --watch
 cd "C:\Users\sunda\ws\se-private"
-cp -R _site/* ../stackexplorer.github.io/ 
+xcopy _site "..\stackexplorer.github.io\" /K /D /H /Y
 git add .
 git commit -m 'Publish' 
 git push origin master

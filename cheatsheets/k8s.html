@@ -9,15 +9,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Explore full stack development" />
 <meta property="og:description" content="Explore full stack development" />
-<link rel="canonical" href="https://stackexplorer.github.io/cheatsheets/k8s" />
-<meta property="og:url" content="https://stackexplorer.github.io/cheatsheets/k8s" />
+<link rel="canonical" href="http://localhost:4000/cheatsheets/k8s" />
+<meta property="og:url" content="http://localhost:4000/cheatsheets/k8s" />
 <meta property="og:site_name" content="StackExplorer" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-19T00:00:00-08:00" />
 <script type="application/ld+json">
-{"dateModified":"2021-01-19T00:00:00-08:00","datePublished":"2021-01-19T00:00:00-08:00","@type":"BlogPosting","headline":"Kubernetes Cheatsheet","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackexplorer.github.io/cheatsheets/k8s"},"url":"https://stackexplorer.github.io/cheatsheets/k8s","description":"Explore full stack development","@context":"https://schema.org"}</script>
+{"dateModified":"2021-01-19T00:00:00-08:00","datePublished":"2021-01-19T00:00:00-08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/cheatsheets/k8s"},"url":"http://localhost:4000/cheatsheets/k8s","headline":"Kubernetes Cheatsheet","description":"Explore full stack development","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://stackexplorer.github.io/feed.xml" title="StackExplorer" /><script>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="StackExplorer" /><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -60,6 +60,9 @@
   <li><a href="#list-all-namespaces-in-a-kubernetes-cluster" id="markdown-toc-list-all-namespaces-in-a-kubernetes-cluster">List all namespaces in a kubernetes cluster</a></li>
   <li><a href="#list-all-resources-in-a-namespace" id="markdown-toc-list-all-resources-in-a-namespace">List all resources in a namespace</a></li>
   <li><a href="#access-shell-in-a-pod" id="markdown-toc-access-shell-in-a-pod">Access shell in a pod</a></li>
+  <li><a href="#kubernetes-set-context" id="markdown-toc-kubernetes-set-context">Kubernetes set context</a></li>
+  <li><a href="#delete-a-pod" id="markdown-toc-delete-a-pod">Delete a pod</a></li>
+  <li><a href="#describe-pod" id="markdown-toc-describe-pod">Describe pod</a></li>
 </ul>
 
 <h3 id="get-pods-in-a-namespace">Get pods in a namespace</h3>
@@ -84,6 +87,16 @@
 
 <h3 id="access-shell-in-a-pod">Access shell in a pod</h3>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> &lt;pod_name&gt; bash
+</code></pre></div></div>
+
+<h3 id="kubernetes-set-context">Kubernetes set context</h3>
+
+<h3 id="delete-a-pod">Delete a pod</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete pod &lt;pod_name&gt; <span class="nt">-n</span> &lt;namespace&gt;
+</code></pre></div></div>
+
+<h3 id="describe-pod">Describe pod</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod/&lt;pod_name&gt; <span class="nt">-n</span> &lt;namespace&gt;
 </code></pre></div></div>
 
   </div><a class="u-url" href="/cheatsheets/k8s" hidden></a>
