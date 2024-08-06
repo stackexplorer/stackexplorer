@@ -1,158 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-22T21:29:26-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Explore full stack development</subtitle><entry><title type="html">Ultra learning experiment to crush developer interview</title><link href="http://localhost:4000/ultra-learning/challenge1/2021/07/22/ultralearning-crush-interview.html" rel="alternate" type="text/html" title="Ultra learning experiment to crush developer interview" /><published>2021-07-22T00:00:00-07:00</published><updated>2021-07-22T00:00:00-07:00</updated><id>http://localhost:4000/ultra-learning/challenge1/2021/07/22/ultralearning-crush-interview</id><content type="html" xml:base="http://localhost:4000/ultra-learning/challenge1/2021/07/22/ultralearning-crush-interview.html">&lt;p&gt;Inspired by Ultra learning experiment, I am going to take up the challenge to overcome my interview fear and procrastination, and become a seasoned interviewee.
-At the same time blogging and publishing a book from it as outcome.
-In order to develop interviewing skills, I will be focusing on the following areas to learn.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-05T21:24:34-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">StackExplorer</title><subtitle>Explore full stack development</subtitle><entry><title type="html">How to run a local webserver from any directory</title><link href="http://localhost:4000/howto/webserver/2024/08/05/2-How-to-run-local-webserver.html" rel="alternate" type="text/html" title="How to run a local webserver from any directory" /><published>2024-08-05T00:00:00-07:00</published><updated>2024-08-05T00:00:00-07:00</updated><id>http://localhost:4000/howto/webserver/2024/08/05/2-How-to-run-local-webserver</id><content type="html" xml:base="http://localhost:4000/howto/webserver/2024/08/05/2-How-to-run-local-webserver.html">&lt;p&gt;You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.&lt;/p&gt;
 
-&lt;h3 id=&quot;following-are-the-focus-areas&quot;&gt;Following are the focus areas&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Algorithms
-    &lt;ul&gt;
-      &lt;li&gt;Concepts, patterns and solutions&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;System Design
-    &lt;ul&gt;
-      &lt;li&gt;Concepts, patterns and solutions&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Web app development
-    &lt;ul&gt;
-      &lt;li&gt;Spring boot&lt;/li&gt;
-      &lt;li&gt;Firebase&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;If you have python3 installed then it can be done using a single command:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This by default runs on port 8000. Optionally you can configure the port by running the following command:&lt;/p&gt;
 
-&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Elements of Programming Interviews book&lt;/li&gt;
-  &lt;li&gt;William Fiest udemy 2 courses&lt;/li&gt;
-  &lt;li&gt;Cracking the coding interview&lt;/li&gt;
-  &lt;li&gt;Leetcode lists
-75 Leetcode questions
-Most liked leetcode questions
-Facebook questions
-Amazon questions&lt;/li&gt;
-  &lt;li&gt;Coder byte video about dynamic programming&lt;/li&gt;
-  &lt;li&gt;interviewing.io, pramp - real videos watch&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;preparation-plan&quot;&gt;Preparation plan&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Read Elements of Programming interviews and take notes - Concepts, patterns and problems&lt;/li&gt;
-  &lt;li&gt;Take mock exams in leetcode, interviewing.io&lt;/li&gt;
-  &lt;li&gt;Periodically write up and do webapp development&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="challenge" /><category term="ultra-learning" /><summary type="html">Inspired by Ultra learning experiment, I am going to take up the challenge to overcome my interview fear and procrastination, and become a seasoned interviewee. At the same time blogging and publishing a book from it as outcome. In order to develop interviewing skills, I will be focusing on the following areas to learn.</summary></entry><entry><title type="html">Twitter Spring Boot</title><link href="http://localhost:4000/2021/04/25/twitter-spring-boot.html" rel="alternate" type="text/html" title="Twitter Spring Boot" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>http://localhost:4000/2021/04/25/twitter-spring-boot</id><content type="html" xml:base="http://localhost:4000/2021/04/25/twitter-spring-boot.html">&lt;p&gt;Requirements
-Text only tweet
-Users with followers
-Timeline with&lt;/p&gt;
-
-&lt;p&gt;System design
-Practical
-Ideal&lt;/p&gt;
-
-&lt;p&gt;Implementation&lt;/p&gt;
-
-&lt;p&gt;Parts
-API authentication&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">System Design Notes</title><link href="http://localhost:4000/2021/04/25/system-design-notes.html" rel="alternate" type="text/html" title="System Design Notes" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>http://localhost:4000/2021/04/25/system-design-notes</id><content type="html" xml:base="http://localhost:4000/2021/04/25/system-design-notes.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Amazon Algo Sd Questions</title><link href="http://localhost:4000/2021/04/25/amazon-algo-sd-questions.html" rel="alternate" type="text/html" title="Amazon Algo Sd Questions" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>http://localhost:4000/2021/04/25/amazon-algo-sd-questions</id><content type="html" xml:base="http://localhost:4000/2021/04/25/amazon-algo-sd-questions.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Maven Cheatsheet</title><link href="http://localhost:4000/2021/04/25/maven-cheatsheet.html" rel="alternate" type="text/html" title="Maven Cheatsheet" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>http://localhost:4000/2021/04/25/maven-cheatsheet</id><content type="html" xml:base="http://localhost:4000/2021/04/25/maven-cheatsheet.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Algo Notes</title><link href="http://localhost:4000/notes/algo" rel="alternate" type="text/html" title="Algo Notes" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>http://localhost:4000/notes/algo-notes</id><content type="html" xml:base="http://localhost:4000/notes/algo"></content><author><name></name></author><category term="notes" /><category term="algo" /></entry><entry><title type="html">Linux Cheatsheet</title><link href="http://localhost:4000/cheatsheets/linux" rel="alternate" type="text/html" title="Linux Cheatsheet" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>http://localhost:4000/cheatsheets/linux-cheat-sheet</id><content type="html" xml:base="http://localhost:4000/cheatsheets/linux">&lt;p&gt;Create symbolic link. It can be a file or folder.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;source_path&amp;gt; &amp;lt;target_path&amp;gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; http.server 9000
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Find any file in linux&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find /dir &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;file_name.ext&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="linux" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Cron Cheatsheet</title><link href="http://localhost:4000/cheatsheets/cron" rel="alternate" type="text/html" title="Cron Cheatsheet" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>http://localhost:4000/cheatsheets/cron-cheat-sheet</id><content type="html" xml:base="http://localhost:4000/cheatsheets/cron">&lt;p&gt;Edit crontab:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
+&lt;p&gt;Its a blocking command and you get the access logs for each access from browser to know whats happening:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
+127.0.0.1 - - [23/Nov/2019 12:30:20] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:20] code 404, message File not found
+127.0.0.1 - - [23/Nov/2019 12:30:20] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -
+127.0.0.1 - - [23/Nov/2019 12:30:26] &quot;GET /cloudrun/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:27] &quot;GET /cloudrun/2019/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:29] &quot;GET /cloudrun/2019/11/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:30] &quot;GET /cloudrun/2019/11/22/ HTTP/1.1&quot; 200 -
+127.0.0.1 - - [23/Nov/2019 12:30:30] &quot;GET /cloudrun/2019/11/22/What-is-cloud-run.html HTTP/1.1&quot; 200 -
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Check log files:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;CRON /var/log/syslog | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &amp;lt;script_name.sh&amp;gt;
+&lt;p&gt;Reference:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/http.server.html&quot;&gt;https://docs.python.org/3/library/http.server.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="[&quot;howto&quot;, &quot;webserver&quot;]" /><category term="howto" /><category term="webserver" /><category term="local" /><summary type="html">You may want to run a local webserver to serve static files for testing. It may be your single page app or single html file or any static file.</summary></entry><entry><title type="html">How to Base64 Encode and Decode</title><link href="http://localhost:4000/howto/2024/08/05/1-How-to-base64-encode-decode.html" rel="alternate" type="text/html" title="How to Base64 Encode and Decode" /><published>2024-08-05T00:00:00-07:00</published><updated>2024-08-05T00:00:00-07:00</updated><id>http://localhost:4000/howto/2024/08/05/1-How-to-base64-encode-decode</id><content type="html" xml:base="http://localhost:4000/howto/2024/08/05/1-How-to-base64-encode-decode.html">&lt;p&gt;Often you would want to convert a text into base64 encoding and decode it. Following are the commands to do the same:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;password&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;base64&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cGFzc3dvcmQNCg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Its important to include &lt;code class=&quot;highlighter-rouge&quot;&gt;-n&lt;/code&gt; option so that echo command does not include new line character otherwise new line character will also be encoded.&lt;/p&gt;
 
-&lt;p&gt;Cron job format at midnight:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 0 * * *
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Format&lt;/p&gt;
-&lt;min&gt; &lt;hour&gt; &amp;lt;day(month)&amp;gt; &lt;month&gt; &amp;lt;day(week)&amp;gt;
-https://crontab.guru/every-5-minutes
-&lt;/month&gt;&lt;/hour&gt;&lt;/min&gt;</content><author><name></name></author><category term="cron" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Key Algorithm questions</title><link href="http://localhost:4000/interview/algos" rel="alternate" type="text/html" title="Key Algorithm questions" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>http://localhost:4000/interview/key-algos</id><content type="html" xml:base="http://localhost:4000/interview/algos">&lt;ul&gt;
-  &lt;li&gt;Alien Dictionary&lt;/li&gt;
-  &lt;li&gt;Regex&lt;/li&gt;
-  &lt;li&gt;Trapping Rain water&lt;/li&gt;
-  &lt;li&gt;Edit Distance&lt;/li&gt;
-  &lt;li&gt;Text Justification&lt;/li&gt;
-  &lt;li&gt;Merge Ksorted lists&lt;/li&gt;
-  &lt;li&gt;Sliding Window Maximum&lt;/li&gt;
-  &lt;li&gt;LFU Cache&lt;/li&gt;
-  &lt;li&gt;Minimum window substring&lt;/li&gt;
-  &lt;li&gt;Vertical order traversal of binary tree&lt;/li&gt;
-  &lt;li&gt;Burst balloons&lt;/li&gt;
-  &lt;li&gt;N Queens&lt;/li&gt;
-  &lt;li&gt;Design Auto complete system&lt;/li&gt;
-  &lt;li&gt;Skyline&lt;/li&gt;
-  &lt;li&gt;Best time to buy and sell stocks IV&lt;/li&gt;
-  &lt;li&gt;Word Ladder&lt;/li&gt;
-  &lt;li&gt;Max profit in Job scheduling&lt;/li&gt;
-  &lt;li&gt;Critical connections in a network&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="algo" /><category term="list" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">Architecture of Systems</title><link href="http://localhost:4000/interview/sd" rel="alternate" type="text/html" title="Architecture of Systems" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>http://localhost:4000/interview/systems</id><content type="html" xml:base="http://localhost:4000/interview/sd">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#systems&quot; id=&quot;markdown-toc-systems&quot;&gt;Systems&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#object-oriented-design&quot; id=&quot;markdown-toc-object-oriented-design&quot;&gt;Object oriented design&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#distributed-system&quot; id=&quot;markdown-toc-distributed-system&quot;&gt;Distributed System&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#concepts&quot; id=&quot;markdown-toc-concepts&quot;&gt;Concepts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#talks&quot; id=&quot;markdown-toc-talks&quot;&gt;Talks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(System Design tempate) [https://leetcode.com/discuss/career/229177/My-System-Design-Template]&lt;/p&gt;
-
-&lt;h3 id=&quot;systems&quot;&gt;Systems&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reddit&lt;/li&gt;
-  &lt;li&gt;Robinhood&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/interview/sd/twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Youtube&lt;/li&gt;
-  &lt;li&gt;Netflix&lt;/li&gt;
-  &lt;li&gt;Yelp&lt;/li&gt;
-  &lt;li&gt;Uber&lt;/li&gt;
-  &lt;li&gt;Ticket Master&lt;/li&gt;
-  &lt;li&gt;Slack&lt;/li&gt;
-  &lt;li&gt;Google&lt;/li&gt;
-  &lt;li&gt;Gmail&lt;/li&gt;
-  &lt;li&gt;Pastebin&lt;/li&gt;
-  &lt;li&gt;Dropbox&lt;/li&gt;
-  &lt;li&gt;Airbnb&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;object-oriented-design&quot;&gt;Object oriented design&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Elevator design&lt;/li&gt;
-  &lt;li&gt;Cofee vending machine&lt;/li&gt;
-  &lt;li&gt;Comment filtering system&lt;/li&gt;
-  &lt;li&gt;Design Chess&lt;/li&gt;
-  &lt;li&gt;Parking lot&lt;/li&gt;
-  &lt;li&gt;Amazon locker&lt;/li&gt;
-  &lt;li&gt;Rate limiter
-Frequent call amazon&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;distributed-system&quot;&gt;Distributed System&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Cache&lt;/li&gt;
-  &lt;li&gt;Message queue&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;concepts&quot;&gt;Concepts&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Consistent Hashing&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;talks&quot;&gt;Talks&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Y6Ev8GIlbxc&quot;&gt;Distributed System in one lesson&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tpspO9K28PM&amp;amp;t=2037s&quot;&gt;Four distributed Architecture patterns&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=X40EozwK75s&quot;&gt;Event streaming&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=996OiexHze0&quot;&gt;OAuth 2.0 in plain english&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=UEAMfLPZZhE&amp;amp;list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&quot;&gt;Distributed Systems&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=CZ3wIuvmHeM&amp;amp;t=47s&quot;&gt;Mastering Chaos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=yqc3PPmHvrA&amp;amp;list=RDCMUCkQX1tChV7Z7l1LFF4L9j_g&amp;amp;index=5&quot;&gt;Streaming million like/second&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Scaling instagram&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6w6E_B55p0E&quot;&gt;Scaling push messages Netflix&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="sd" /><category term="list" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry></feed>
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;cGFzc3dvcmQNCg==&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;base64&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--decode&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; password
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="[&quot;howto&quot;]" /><category term="howto" /><category term="base64" /><summary type="html">Often you would want to convert a text into base64 encoding and decode it. Following are the commands to do the same:</summary></entry></feed>

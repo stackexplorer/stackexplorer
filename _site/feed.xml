@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://stackexplorer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://stackexplorer.github.io/" rel="alternate" type="text/html" /><updated>2024-08-05T20:24:01-07:00</updated><id>https://stackexplorer.github.io/feed.xml</id><title type="html">StackExplorer</title><subtitle>Explore full stack development</subtitle><entry><title type="html">;fvl dnhh xhhxxhh xhxxh xhm m</title><link href="https://stackexplorer.github.io/ultra-learning/challenge1/2021/07/23/heap-notes.html" rel="alternate" type="text/html" title=";fvl dnhh xhhxxhh xhxxh xhm  m" /><published>2021-07-23T00:00:00-07:00</published><updated>2021-07-23T00:00:00-07:00</updated><id>https://stackexplorer.github.io/ultra-learning/challenge1/2021/07/23/heap-notes</id><content type="html" xml:base="https://stackexplorer.github.io/ultra-learning/challenge1/2021/07/23/heap-notes.html"></content><author><name></name></author><category term="challenge" /><category term="ultra-learning" /><summary type="html"></summary></entry><entry><title type="html">Ultra learning experiment to crush developer interview</title><link href="https://stackexplorer.github.io/ultra-learning/challenge1/2021/07/22/ultralearning-crush-interview.html" rel="alternate" type="text/html" title="Ultra learning experiment to crush developer interview" /><published>2021-07-22T00:00:00-07:00</published><updated>2021-07-22T00:00:00-07:00</updated><id>https://stackexplorer.github.io/ultra-learning/challenge1/2021/07/22/ultralearning-crush-interview</id><content type="html" xml:base="https://stackexplorer.github.io/ultra-learning/challenge1/2021/07/22/ultralearning-crush-interview.html">&lt;p&gt;Inspired by Ultra learning experiment, I am going to take up the challenge to overcome my interview fear and procrastination, and become a seasoned interviewee.
+At the same time blogging and publishing a book from it as outcome.
+In order to develop interviewing skills, I will be focusing on the following areas to learn.&lt;/p&gt;
+
+&lt;h3 id=&quot;following-are-the-focus-areas&quot;&gt;Following are the focus areas&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Algorithms
+    &lt;ul&gt;
+      &lt;li&gt;Concepts, patterns and solutions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;System Design
+    &lt;ul&gt;
+      &lt;li&gt;Concepts, patterns and solutions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Web app development
+    &lt;ul&gt;
+      &lt;li&gt;Spring boot&lt;/li&gt;
+      &lt;li&gt;Firebase&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Elements of Programming Interviews book&lt;/li&gt;
+  &lt;li&gt;William Fiest udemy 2 courses&lt;/li&gt;
+  &lt;li&gt;Cracking the coding interview&lt;/li&gt;
+  &lt;li&gt;Leetcode lists
+75 Leetcode questions
+Most liked leetcode questions
+Facebook questions
+Amazon questions&lt;/li&gt;
+  &lt;li&gt;Coder byte video about dynamic programming&lt;/li&gt;
+  &lt;li&gt;interviewing.io, pramp - real videos watch&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;preparation-plan&quot;&gt;Preparation plan&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Read Elements of Programming interviews and take notes - Concepts, patterns and problems&lt;/li&gt;
+  &lt;li&gt;Take mock exams in leetcode, interviewing.io&lt;/li&gt;
+  &lt;li&gt;Periodically write up and do webapp development&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="challenge" /><category term="ultra-learning" /><summary type="html">Inspired by Ultra learning experiment, I am going to take up the challenge to overcome my interview fear and procrastination, and become a seasoned interviewee. At the same time blogging and publishing a book from it as outcome. In order to develop interviewing skills, I will be focusing on the following areas to learn.</summary></entry><entry><title type="html">Twitter Spring Boot</title><link href="https://stackexplorer.github.io/2021/04/25/twitter-spring-boot.html" rel="alternate" type="text/html" title="Twitter Spring Boot" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>https://stackexplorer.github.io/2021/04/25/twitter-spring-boot</id><content type="html" xml:base="https://stackexplorer.github.io/2021/04/25/twitter-spring-boot.html">&lt;p&gt;Requirements
+Text only tweet
+Users with followers
+Timeline with&lt;/p&gt;
+
+&lt;p&gt;System design
+Practical
+Ideal&lt;/p&gt;
+
+&lt;p&gt;Implementation&lt;/p&gt;
+
+&lt;p&gt;Parts
+API authentication&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">System Design Notes</title><link href="https://stackexplorer.github.io/2021/04/25/system-design-notes.html" rel="alternate" type="text/html" title="System Design Notes" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>https://stackexplorer.github.io/2021/04/25/system-design-notes</id><content type="html" xml:base="https://stackexplorer.github.io/2021/04/25/system-design-notes.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Amazon Algo Sd Questions</title><link href="https://stackexplorer.github.io/2021/04/25/amazon-algo-sd-questions.html" rel="alternate" type="text/html" title="Amazon Algo Sd Questions" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>https://stackexplorer.github.io/2021/04/25/amazon-algo-sd-questions</id><content type="html" xml:base="https://stackexplorer.github.io/2021/04/25/amazon-algo-sd-questions.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Maven Cheatsheet</title><link href="https://stackexplorer.github.io/2021/04/25/maven-cheatsheet.html" rel="alternate" type="text/html" title="Maven Cheatsheet" /><published>2021-04-25T00:00:00-07:00</published><updated>2021-04-25T00:00:00-07:00</updated><id>https://stackexplorer.github.io/2021/04/25/maven-cheatsheet</id><content type="html" xml:base="https://stackexplorer.github.io/2021/04/25/maven-cheatsheet.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Algo Notes</title><link href="https://stackexplorer.github.io/notes/algo" rel="alternate" type="text/html" title="Algo Notes" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>https://stackexplorer.github.io/notes/algo-notes</id><content type="html" xml:base="https://stackexplorer.github.io/notes/algo"></content><author><name></name></author><category term="notes" /><category term="algo" /></entry><entry><title type="html">Linux Cheatsheet</title><link href="https://stackexplorer.github.io/cheatsheets/linux" rel="alternate" type="text/html" title="Linux Cheatsheet" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>https://stackexplorer.github.io/cheatsheets/linux-cheat-sheet</id><content type="html" xml:base="https://stackexplorer.github.io/cheatsheets/linux">&lt;p&gt;Create symbolic link. It can be a file or folder.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;source_path&amp;gt; &amp;lt;target_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Find any file in linux&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find /dir &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;file_name.ext&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="linux" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Cron Cheatsheet</title><link href="https://stackexplorer.github.io/cheatsheets/cron" rel="alternate" type="text/html" title="Cron Cheatsheet" /><published>2021-04-24T00:00:00-07:00</published><updated>2021-04-24T00:00:00-07:00</updated><id>https://stackexplorer.github.io/cheatsheets/cron-cheat-sheet</id><content type="html" xml:base="https://stackexplorer.github.io/cheatsheets/cron">&lt;p&gt;Edit crontab:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check log files:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;CRON /var/log/syslog | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &amp;lt;script_name.sh&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Cron job format at midnight:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 0 * * *
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Format&lt;/p&gt;
+&lt;min&gt; &lt;hour&gt; &amp;lt;day(month)&amp;gt; &lt;month&gt; &amp;lt;day(week)&amp;gt;
+https://crontab.guru/every-5-minutes
+&lt;/month&gt;&lt;/hour&gt;&lt;/min&gt;</content><author><name></name></author><category term="cron" /><category term="cheatsheet" /><summary type="html"></summary></entry><entry><title type="html">Key Algorithm questions</title><link href="https://stackexplorer.github.io/interview/algos" rel="alternate" type="text/html" title="Key Algorithm questions" /><published>2021-03-07T00:00:00-08:00</published><updated>2021-03-07T00:00:00-08:00</updated><id>https://stackexplorer.github.io/interview/key-algos</id><content type="html" xml:base="https://stackexplorer.github.io/interview/algos">&lt;ul&gt;
+  &lt;li&gt;Alien Dictionary&lt;/li&gt;
+  &lt;li&gt;Regex&lt;/li&gt;
+  &lt;li&gt;Trapping Rain water&lt;/li&gt;
+  &lt;li&gt;Edit Distance&lt;/li&gt;
+  &lt;li&gt;Text Justification&lt;/li&gt;
+  &lt;li&gt;Merge Ksorted lists&lt;/li&gt;
+  &lt;li&gt;Sliding Window Maximum&lt;/li&gt;
+  &lt;li&gt;LFU Cache&lt;/li&gt;
+  &lt;li&gt;Minimum window substring&lt;/li&gt;
+  &lt;li&gt;Vertical order traversal of binary tree&lt;/li&gt;
+  &lt;li&gt;Burst balloons&lt;/li&gt;
+  &lt;li&gt;N Queens&lt;/li&gt;
+  &lt;li&gt;Design Auto complete system&lt;/li&gt;
+  &lt;li&gt;Skyline&lt;/li&gt;
+  &lt;li&gt;Best time to buy and sell stocks IV&lt;/li&gt;
+  &lt;li&gt;Word Ladder&lt;/li&gt;
+  &lt;li&gt;Max profit in Job scheduling&lt;/li&gt;
+  &lt;li&gt;Critical connections in a network&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="algo" /><category term="list" /><category term="prep" /><category term="goal" /><category term="interview" /><summary type="html"></summary></entry></feed>
